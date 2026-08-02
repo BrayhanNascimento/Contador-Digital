@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121214;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #202024;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #a8a8b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#numero {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #f75a68;
+}
+
+#mensagem {
+    font-size: 1rem;
+    color: #f75a68;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border:none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn.btn-diminuir{
+    background-color: #f75a68;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.btn-diminuir:hover{
+    background-color: #fc0015;
+}
+
+.btn.btn-reset {
+    background-color: #323238;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.btn-reset:hover{
+    background-color: #121214;
+}
+
+.btn.btn-aumentar {
+    background-color: #00b37e;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.btn-aumentar:hover{
+    background-color: #003816;
+}
+
+#mensagem {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+
+
+@media (min-width: 481px) {
+    .botoes{
+        flex-direction: row;
+    }
+    .btn.btn-diminuir{
+        background-color: #f75a68;
+    }
+    .btn.btn-reset {
+        background-color: #323238;
+    }
+    .btn.btn-aumentar {
+        background-color: #00b37e;
+    }
+}
